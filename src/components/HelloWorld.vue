@@ -27,12 +27,18 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+    <ul>
+      <li v-for='todo in todos' v-bind:key='todo.id'>{{ todo.text }}</li>
+    </ul>
   </div>
 </template>
 
 <script>
 export default {
   name: 'HelloWorld',
+  data: () => (
+    {todos: [{text: 'do this', id: 0}, {text: 'do that', id: 1}]}
+  ),
   props: {
     msg: String
   }

@@ -1,21 +1,37 @@
-# vue-test
+# Termini: no-javascript animated terminal frame for Vue.js
+
+![termini](termini.gif)
 
 ## Project setup
 ```
-npm install
+npm install @mikepicker/termini
 ```
 
-### Compiles and hot-reloads for development
+Then, import Termini component:
 ```
-npm run serve
-```
+<template>
+  <div>
+    <div style='width: 480px; height: 280px'>
+      <Termini v-bind:commands='commands' />
+    </div>
+  </div>
+</template>
 
-### Compiles and minifies for production
-```
-npm run build
-```
+<script>
+import Termini from '@mikepicker/termini'
 
-### Lints and fixes files
-```
-npm run lint
+export default {
+  name: 'HelloWorld',
+  data: function () {
+    return {
+      commands: [
+        'npm install @mikepicker/termini',
+        'enjoy!'
+      ]
+    }
+  },
+  components: {
+    Termini
+  }
+</script>
 ```
