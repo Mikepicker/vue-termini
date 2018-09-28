@@ -1,10 +1,10 @@
-# Termini: no-javascript animated terminal frame for Vue.js
+# vue-termini: no-javascript animated terminal frame for Vue.js
 
 ![termini](termini.gif)
 
 ## Project setup
 ```
-npm install @mikepicker/termini
+npm install vue-termini
 ```
 
 Then, import Termini component:
@@ -18,14 +18,14 @@ Then, import Termini component:
 </template>
 
 <script>
-import Termini from '@mikepicker/termini'
+import Termini from 'vue-termini'
 
 export default {
   name: 'HelloWorld',
   data: function () {
     return {
       commands: [
-        'npm install @mikepicker/termini',
+        'npm install vue-termini',
         'enjoy!'
       ]
     }

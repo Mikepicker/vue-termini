@@ -19,7 +19,7 @@ export default {
   data: function () {
     return {
       commands: [
-        'npm install @mikepicker/termini',
+        'npm install vue-termini',
         'enjoy!'
       ]
     }

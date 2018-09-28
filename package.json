@@ -1,6 +1,6 @@
 {
-  "name": "@mikepicker/termini",
-  "version": "0.1.7",
+  "name": "vue-termini",
+  "version": "0.1.0",
   "main": "dist/termini.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
